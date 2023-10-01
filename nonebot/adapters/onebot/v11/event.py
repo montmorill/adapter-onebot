@@ -123,7 +123,7 @@ class MessageEvent(Event):
     post_type: Literal["message"]
     sub_type: str
     user_id: int
-    message_type: str
+    message_type: Literal["private", "group"]
     message_id: int
     message: Message
     original_message: Message
